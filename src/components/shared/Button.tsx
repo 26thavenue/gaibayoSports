@@ -17,7 +17,7 @@ const Button = ({ size, buttonName, buttonType, onClick }: IButtonProps) => {
 
   const typeClasses = {
     primary: "bg-[#4B86C5] text-white hover:bg-[#3A6EA0]",
-    secondary: "bg-white text-[#4B86C5] border border-[#4B86C5] hover:bg-gray-100",
+    secondary: "bg-white text-black border  hover:bg-gray-100",
     tertiary: "bg-transparent text-black border  hover:bg-gray-100",
   }[buttonType];
 

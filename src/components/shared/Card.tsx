@@ -5,10 +5,11 @@ interface ICardProps {
   cardHeader: string;
   cardContents: string;
   onClick?: () => void;
+  imgUrl?: string;
 }
 
-const Card = ({ cardType, cardContents, onClick, cardHeader }: ICardProps) => {
-  const baseClasses = "rounded shadow-md p-4 border";
+const Card = ({ cardType, cardContents, onClick, cardHeader, imgUrl }: ICardProps) => {
+  const baseClasses = "relative overflow-hidden h-[400px] w-[400px] rounded shadow-md border group cursor-pointer";
   const typeClasses = {
     horizontal: "flex flex-row items-center gap-4",
     vertical: "flex flex-col items-start",
@@ -17,10 +18,22 @@ const Card = ({ cardType, cardContents, onClick, cardHeader }: ICardProps) => {
   return (
     <div
       onClick={onClick}
-      className={`${baseClasses} ${typeClasses} cursor-pointer hover:shadow-lg transition-shadow`}
+      className={`${baseClasses} ${typeClasses}`}
+      style={{
+        backgroundImage: `url(${imgUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="card-header text-lg font-bold mb-2">{cardHeader}</div>
-      <div className="card-contents text-gray-700">{cardContents}</div>
+      {/* Header transitions out on hover */}
+      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white text-lg font-bold p-4 z-20 group-hover:translate-y-full transition-transform duration-500 ease-[cubic-bezier(0.22, 1, 0.36, 1)]">
+        {cardHeader}
+      </div>
+
+      {/* Content slides in from the bottom */}
+      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.22, 1, 0.36, 1)] z-10">
+        <div className="card-contents text-sm">{cardContents}</div>
+      </div>
     </div>
   );
 };
