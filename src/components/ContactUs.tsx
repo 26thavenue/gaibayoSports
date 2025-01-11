@@ -3,7 +3,7 @@ import Button from "./shared/Button"
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col items-start gap-3 bg-white justify-center px-6 py-16 min-h-[80vh]">
+    <div className="flex flex-col text-white items-start gap-3 bg-[#231F20] justify-center px-6 py-16 min-h-[80vh]">
         <h1 className="text-4xl text-bold">Get In touch</h1>
         <p className="mb-2 text-xl text-wrap w-3/4">Let our team of skilled experts handle everything off the pitch, so you can stay focused on delivering results on the pitch.</p>
         <Button

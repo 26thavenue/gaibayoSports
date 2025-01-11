@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,14 @@ const Navbar = () => {
   return (
     <div className="flex px-6 items-center w-full  text-white relative h-[80px] py-3">
       {/* Logo */}
-      <img
-        src="/GAIBAYO_SPORT_LOGO__NEW__page-0001__1_-removebg-preview.png"
-        alt="logo"
-        className="h-[150px] w-[150px] object-cover"
-      />
+      <Link to ="/">
+        <img
+          src="/GAIBAYO_SPORT_LOGO__NEW__page-0001__1_-removebg-preview.png"
+          alt="logo"
+          className="h-[150px] w-[150px] object-cover"
+        />
+      </Link>
+     
 
       {/* Menu Icon */}
       <div
@@ -67,12 +71,12 @@ const Navbar = () => {
         {/* Menu Items */}
         <nav className="flex flex-col gap-6 items-center justify-center h-full w-full  uppercase">
          <div className="group flex gap-3 items-center text-6xl relative">
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
             >
               About
-            </a>
+            </Link>
             <span
               className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
             >
@@ -93,12 +97,12 @@ const Navbar = () => {
             </span>
           </div>
            <div className="group flex gap-3 items-center text-6xl relative">
-            <a
-              href="#about"
+            <Link
+              to="/contact"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
             >
               Contact Us
-            </a>
+            </Link>
             <span
               className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
             >
@@ -119,12 +123,12 @@ const Navbar = () => {
             </span>
           </div>
            <div className="group flex gap-3 items-center text-6xl relative">
-            <a
-              href="#about"
+            <Link
+              to="/services"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
             >
               Our Services
-            </a>
+            </Link>
             <span
               className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
             >

@@ -4,6 +4,7 @@ import AboutUs from "../components/AboutUs";
 import ContactUs from "../components/ContactUs";
 import { useEffect, useState } from "react";
 import "./index.css";
+import Footer from "../components/Footer";
 
 function Home() {
   const [animationCompleted, setAnimationCompleted] = useState(false);
@@ -63,6 +64,7 @@ function Home() {
         <OurServices />
         <AboutUs />
         <ContactUs />
+        <Footer/>
       </div>
     </div>
   );
