@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex px-6 items-center  text-white relative h-[80px] py-3">
+    <div className="flex px-6 items-center w-full  text-white relative h-[80px] py-3">
       {/* Logo */}
       <img
         src="/GAIBAYO_SPORT_LOGO__NEW__page-0001__1_-removebg-preview.png"
@@ -80,7 +80,7 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth="1.5"
+                strokeWidth="2.2"
                 stroke="currentColor"
                 className="w-12"
               >
@@ -106,7 +106,7 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth="1.5"
+                strokeWidth="2.2"
                 stroke="currentColor"
                 className="w-12"
               >
@@ -132,7 +132,7 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth="1.5"
+                strokeWidth="2.2"
                 stroke="currentColor"
                 className="w-12"
               >

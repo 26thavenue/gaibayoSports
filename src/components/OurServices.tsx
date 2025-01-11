@@ -15,7 +15,7 @@ const OurServices = () => {
 
 
   return (
-    <div className='px-6  py-16 flex flex-col gap-5 bg-[#231F20]'>
+    <div className='px-6 py-16 flex flex-col gap-5 bg-[#231F20]'>
        <div className='mx-auto 4 max-w-4xl '>
         <h1 className='text-3xl text-white font-bold mb-10'>Our Services</h1>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
