@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-[#231F20] py-8 px-12">
+    <div className="bg-[#231F20] py-8 px-12 w-full">
       <div className="bg-[#D3D3D3] w-full px-8 rounded-md py-12">
         {/* Logo and Title */}
         <div className="flex gap-3 items-center mb-8">
