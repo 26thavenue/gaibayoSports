@@ -15,7 +15,7 @@ const OurServices = () => {
 
 
   return (
-    <div className='px-6 py-16 mt-10 flex flex-col gap-5 bg-[#231F20]'>
+    <div className='px-6 py-16 mt-10 flex flex-col gap-5 bg-[#4B86C5]'>
        <div className='mx-auto  max-w-6xl flex gap-6 '>
         <div className='flex flex-col mb-10'>
            <h1 className='text-5xl text-white font-bold '>Our </h1>

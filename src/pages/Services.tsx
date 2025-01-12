@@ -53,7 +53,7 @@ const Services = () => {
       
       </div>
       
-      <div className=" gap-16 flex flex-col mx-auto max-w-4xl mt-40 ">
+      <div className=" gap-16 flex flex-col mx-auto max-w-4xl my-40  ">
         {services.map((service, index) => (
           <div
             key={index}

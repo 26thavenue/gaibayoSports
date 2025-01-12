@@ -1,23 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Testimonials = () => {
   const testimonials = [
-  {
-    name: "John Doe",
-    role: "Football Coach",
-    text: "Gaibayo SPORTS provided the guidance and support I needed to elevate my players' careers. Highly professional and reliable.",
-  },
-  {
-    name: "Jane Smith",
-    role: "Athlete",
-    text: "Thanks to Gaibayo SPORTS, I have achieved milestones in my career I never thought possible. Their expertise is unmatched!",
-  },
-  {
-    name: "Mark Johnson",
-    role: "Sports Consultant",
-    text: "Partnering with Gaibayo SPORTS was one of the best decisions. Their professionalism and network are top-notch.",
-  },
-];
+    {
+      name: "John Doe",
+      role: "Football Coach",
+      text: "Gaibayo SPORTS provided the guidance and support I needed to elevate my players' careers. Highly professional and reliable.",
+    },
+    {
+      name: "Jane Smith",
+      role: "Athlete",
+      text: "Thanks to Gaibayo SPORTS, I have achieved milestones in my career I never thought possible. Their expertise is unmatched!",
+    },
+    {
+      name: "Mark Johnson",
+      role: "Sports Consultant",
+      text: "Partnering with Gaibayo SPORTS was one of the best decisions. Their professionalism and network are top-notch.",
+    },
+    {
+      name: "Emily Brown",
+      role: "Basketball Player",
+      text: "The team at Gaibayo SPORTS has been instrumental in securing my dream sponsorships. Their support has been incredible!",
+    },
+    {
+      name: "Alex Turner",
+      role: "Sports Journalist",
+      text: "Gaibayo SPORTS has set a new standard in sports management. Their attention to detail and client-first approach is commendable.",
+    },
+    {
+      name: "Sophia Lee",
+      role: "Sports Physiotherapist",
+      text: "Working with Gaibayo SPORTS has been a seamless and rewarding experience. They truly care about their clients' growth.",
+    },
+    {
+      name: "Michael Carter",
+      role: "Soccer Analyst",
+      text: "Gaibayo SPORTS connects athletes with life-changing opportunities. They’re a beacon of excellence in the sports industry.",
+    },
+  ];
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -33,33 +53,45 @@ const Testimonials = () => {
     );
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Switch every 5 seconds
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   return (
-    <div className="max-w-lg mx-auto p-4 bg-gray-100 rounded-md shadow-md">
-      <div className="text-center">
-        <p className="text-lg italic text-gray-700">
+    <div className="flex flex-col items-center justify-center min-h-screen  py-12 px-4">
+      <h2 className="text-3xl font-bold mb-8 text-white">What Our Clients Say</h2>
+      <div className="bg-white shadow-lg rounded-lg p-6 max-w-md w-full">
+        <p className="text-lg italic text-gray-600 text-center">
           "{testimonials[currentIndex].text}"
         </p>
-        <h3 className="mt-4 text-xl font-bold text-gray-800">
-          {testimonials[currentIndex].name}
-        </h3>
-        <p className="text-sm text-gray-500">{testimonials[currentIndex].role}</p>
+        <div className="mt-6 text-center">
+          <h3 className="text-xl font-semibold text-gray-800">
+            {testimonials[currentIndex].name}
+          </h3>
+          <p className="text-sm text-gray-500">{testimonials[currentIndex].role}</p>
+        </div>
       </div>
-      <div className="flex justify-between mt-6">
+      <div className="flex space-x-4 mt-6">
         <button
           onClick={handlePrev}
-          className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400"
+          className="bg-gray-300 hover:bg-gray-400 text-gray-700 rounded-full px-4 py-2"
         >
-          Prev
+          ←
         </button>
         <button
           onClick={handleNext}
-          className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400"
+          className="bg-gray-300 hover:bg-gray-400 text-gray-700 rounded-full px-4 py-2"
         >
-          Next
+          →
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;
