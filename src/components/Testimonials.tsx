@@ -63,8 +63,8 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  py-12 px-4">
-      <h2 className="text-3xl font-bold mb-8 text-white">What Our Clients Say</h2>
+    <div className="flex flex-col items-center justify-center my-2 py-12 px-4">
+      <h1 className="text-2xl lg:text-3xl font-bold mb-8 text-white">What Our Clients Say</h1>
       <div className="bg-white shadow-lg rounded-lg p-6 max-w-md w-full">
         <p className="text-lg italic text-gray-600 text-center">
           "{testimonials[currentIndex].text}"

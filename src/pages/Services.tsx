@@ -36,16 +36,16 @@ const Services = () => {
 
   return (
     <div className='w-full  bg-[#231F20]  '>
-      <div className='w-full h-[100vh]'>
+      <div className='w-full h-[60vh] lg:h-[100vh]'>
          <img
          src={FM}
-         className="w-full h-full object-cover absolute "
+         className="w-full h-[60vh] lg:h-full object-cover absolute "
          alt="Sports"
          />
       <div className='absolute  inset-0 flex flex-col items-center justify-between text-white'>
         <Navbar/>
         <div className="flex flex-col h-full items-center justify-center text-center space-y-4">
-          <h1 className="text-6xl font-bold text-center mb-8 text-white">Our Services</h1>
+          <h1 className="text-3xl lg:text-6xl font-bold text-center mb-8 text-white">Our Services</h1>
           {/* <p>Some of the Services we offer</p> */}
         </div>
         
@@ -53,19 +53,19 @@ const Services = () => {
       
       </div>
       
-      <div className=" gap-16 flex flex-col mx-auto max-w-4xl my-40  ">
+      <div className=" gap-16 flex flex-col mx-auto w-full lg:max-w-4xl my-40  ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex  justify-between items-center"
+            className="flex flex-col lg:flex-row justify-between items-center"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="h-[300px] w-[400px] object-cover rounded-md "
+              className=" h-[200px] lg:h-[300px] w-[300px] lg:w-[400px] object-cover rounded-md "
             />
-            <div className="p-6 w-1/2">
-              <h2 className="text-xl text-white font-semibold mb-2">{service.title}</h2>
+            <div className=" py-6 px-0 lg:p-6 w-[300px] lg:w-1/2">
+              <h2 className="text-2xl text-white font-semibold mb-2">{service.title}</h2>
               <p className=" text-white text-[16px]">{service.description}</p>
             </div>
           </div>

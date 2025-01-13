@@ -23,20 +23,20 @@ const Hero = () => {
    
 
   return (
-    <div className='w-full h-[100vh] bg-black  ' >
+    <div className='w-full h-[60vh] bg-blue-100 lg:h-[100vh] lg:bg-black  ' >
       <img
          src={currentBg}
 
-         className="w-full h-full object-cover absolute "
+         className="w-full lg:h-full h-[60vh] object-cover absolute "
          alt="Sports"
          />
        <div className="absolute  inset-0 flex flex-col items-center justify-between text-white">
         <Navbar />
 
         {/* Text Content */}
-        <div className="flex flex-col h-full items-center justify-center text-center space-y-4">
-          <h1 className="text-6xl font-bold">Welcome to Gaibayo Sports</h1>
-          <p className="text-xl max-w-xl">
+        <div className="flex flex-col gap-3 items-center text-center my-0 h-full justify-normal lg:justify-center mt-40 lg:mt-0">
+          <h1 className=" text-3xl lg:text-6xl font-bold">Welcome to Gaibayo Sports</h1>
+          <p className="text-lg lg:text-xl max-w-xl">
             Empowering sports enthusiasts with innovative solutions and world-class services.
           </p>
             <svg
@@ -45,7 +45,7 @@ const Hero = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.0"
               stroke="currentColor"
-              className={'w-16 mt-16 animate-bounce '}
+              className={'w-16 mt-16 animate-bounce  '}
             >
               <path
                 strokeLinecap="round"

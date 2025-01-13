@@ -3,26 +3,21 @@ import FM from '../assets/Financial_Management_1.png'
 import CN from "../assets/Contract_Negotiations.png"
 import CM from "../assets/career_mgmt.png"
 import PR from "../assets/PR_Services.png"
-// import {useEffect} from "react"
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+
 
 const OurServices = () => {
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 800, easing: "ease-out" });
-  // }, []);
+;
 
 
   return (
-    <div className='px-6 py-16 mt-10 flex flex-col gap-5 bg-[#4B86C5]'>
-       <div className='mx-auto  max-w-6xl flex gap-6 '>
-        <div className='flex flex-col mb-10'>
-           <h1 className='text-5xl text-white font-bold '>Our </h1>
-           <h1 className='text-5xl text-white font-bold '>Services</h1>
+    <div className='px-6 py-16 mt-10 flex flex-col gap-5 bg-[#231F20]'>
+       <div className='mx-auto flex-col lg:flex-row lg:max-w-6xl flex gap-6 '>
+        <div className='flex flex-row lg:flex-col mb-10 gap-2'>
+           <h1 className='text-2xl lg:text-5xl text-white font-bold '>Our </h1>
+           <h1 className='text-2xl lg:text-5xl text-white font-bold '>Services</h1>
         </div>
        
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='grid  grid-cols-1 lg:grid-cols-2 gap-4'>
             <Card
               cardType='vertical'
               imgUrl={FM}

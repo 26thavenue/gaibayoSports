@@ -28,7 +28,7 @@ function Home() {
   const text = "Gaibayo Sports";
 
   return (
-    <div className=" bg-[#4B86C5]">
+    <div className=" bg-[#231F20]">
       {/* Initial Animation Div */}
       <div
         className={`fixed bg-[#231F20]  text-white top-0 flex items-center justify-center left-0 w-full h-full transition-transform duration-1000 ${
@@ -38,7 +38,7 @@ function Home() {
           transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
         }}
       >
-        <h2 className="text-4xl flex space-x-2">
+        <h2 className=" sm:text-2xl lg:text-4xl flex space-x-2">
           {text.split(" ").map((word, index) => (
             <span
               key={index}

@@ -9,7 +9,7 @@ interface ICardProps {
 }
 
 const Card = ({ cardType, cardContents, onClick, cardHeader, imgUrl }: ICardProps) => {
-  const baseClasses = "relative overflow-hidden h-[400px] w-[400px] rounded shadow-md border group cursor-pointer";
+  const baseClasses = "relative overflow-hidden h-[300px] w-[300px] lg:h-[400px] lg:w-[400px] rounded shadow-md border group cursor-pointer";
   const typeClasses = {
     horizontal: "flex flex-row items-center gap-4",
     vertical: "flex flex-col items-start",

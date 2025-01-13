@@ -43,7 +43,7 @@ const Navbar = () => {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed z-40 top-0 right-0 h-full w-4/5 bg-gray-900 p-6 shadow-lg transform ${
+        className={`fixed z-40 top-0 right-0 h-full w-full lg:w-4/5 bg-gray-900 p-6 shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 ease-[cubic-bezier(0.22, 1, 0.36, 1)]`}
       >
@@ -70,7 +70,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <nav className="flex flex-col gap-6 items-center justify-center h-full w-full  uppercase">
-         <div className="group flex gap-3 items-center text-6xl relative">
+         <div className="group flex gap-3 items-center text-4xl lg:text-6xl relative">
             <Link
               to="/about"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
@@ -96,7 +96,7 @@ const Navbar = () => {
               </svg>
             </span>
           </div>
-           <div className="group flex gap-3 items-center text-6xl relative">
+           <div className="group flex gap-3 items-center text-4xl lg:text-6xl relative">
             <Link
               to="/contact"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
@@ -122,7 +122,7 @@ const Navbar = () => {
               </svg>
             </span>
           </div>
-           <div className="group flex gap-3 items-center text-6xl relative">
+           <div className="group flex gap-3 items-center text-4xl lg:text-6xl relative">
             <Link
               to="/services"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
