@@ -1,5 +1,6 @@
 import Button from "./shared/Button"
 import pic from "../assets/Frame_10.png"
+import {Link} from "react-router-dom"
 
 const AboutUs = () => {
   return (
@@ -11,23 +12,23 @@ const AboutUs = () => {
         />
         <div className="text-white w-full lg:w-1/2 flex-col flex  items-start gap-4">
             <h1 className="text-2xl lg:text-4xl font-bold mb-2">About Gaibayo Sports</h1>
-            <h3 className="mb-3 text-[16px] text-slate-200">Gaibayo Sports Management and Marketing is a premier sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes. We provide comprehensive PR services, global placement opportunities, and create powerful partnerships that elevate the careers of athletes on the international stage.</h3>
+            <h3 className="mb-3 text-[16px] text-slate-200">Gaibayo Sports Management and Marketing is Link premier sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes. We provide comprehensive PR services, global placement opportunities, and create powerful partnerships that elevate the careers of athletes on the international stage.</h3>
             <div className="flex gap-8 items-center ">
-                <a href="/about">
+                <Link to="/about">
                   <Button
                    size ={"medium"}
                    buttonName="Read More"
                    buttonType="secondary"
                 />
-                </a>
+                </Link>
                 
-                <a href="/services">
+                <Link to="/services">
                    <Button
                       size ={"medium"}
                       buttonName="Our Services"
                       buttonType="secondary"
                     />
-                </a>
+                </Link>
                
 
             </div>

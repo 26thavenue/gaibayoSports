@@ -1,7 +1,7 @@
 import { MdOutlineMail , MdOutlineLocalPhone  } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6"; 
 import { BsInstagram } from "react-icons/bs";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiYoutube } from "react-icons/fi";
 import logo from "../assets/logo.png"
 
@@ -18,43 +18,43 @@ const Footer = () => {
           />
           {/* <h1 className="text-2xl font-semibold">Gaibayo Sports</h1> */}
            <div className="flex gap-3 lg:gap-6 text-lg my-6">
-            <a href="/about" className="hover:text-gray-700">About Us</a>
-            <a href="/services" className="hover:text-gray-700">Services</a>
-            <a href="/contact" className="hover:text-gray-700">Contact Us</a>
+            <Link to="/about" className="hover:text-gray-700">About Us</Link>
+            <Link to="/services" className="hover:text-gray-700">Services</Link>
+            <Link to="/contact" className="hover:text-gray-700">Contact Us</Link>
           </div>
 
           <div className="flex gap-10">
-            <a
-              href="mailto:info@gaibayosports.com"
+            <Link
+              to="mailto:info@gaibayosports.com"
               className="hover:text-gray-700"
             >
              <MdOutlineMail size={24}/>
-            </a>
-            <a
-              href="https://instagram.com/gaibayosportsmanagement"
+            </Link>
+            <Link
+              to="https://instagram.com/gaibayosportsmanagement"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-700"
               >
               <BsInstagram size={24} className=" "/>
-            </a>
-            <a
-              href="https://twitter.com/Gaibayo"
+            </Link>
+            <Link
+              to="https://twitter.com/Gaibayo"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-700"
             >
               <FaXTwitter size={24}/>
-            </a>
-            <a href="tel:+905357837831" className="hover:text-gray-700">
+            </Link>
+            <Link to="tel:+905357837831" className="hover:text-gray-700">
              <MdOutlineLocalPhone size={24}/>
-            </a>
-            <a
+            </Link>
+            <Link
               target="_blank"
               rel="noopener noreferrer" 
-              href="https://youtube.com/@manager_gabi?si=AJBv3NHoCnwknkL- " className="hover:text-gray-700">
+              to="https://youtube.com/@manager_gabi?si=AJBv3NHoCnwknkL- " className="hover:text-gray-700">
              <FiYoutube size={24}/>
-            </a>
+            </Link>
           </div>
           
         </div>
