@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link to ="/">
         <img
-          src="/GAIBAYO_SPORT_LOGO__NEW__page-0001__1_-removebg-preview.png"
+          src={logo}
           alt="logo"
           className="h-[150px] w-[150px] object-cover"
         />

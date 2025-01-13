@@ -1,10 +1,11 @@
 import Button from "./shared/Button"
+import pic from "../assets/Frame_10.png"
 
 const AboutUs = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-8 items-center justify-between w-full px-6 py-24  bg-[#231F20] min-h-[80vh]">
         <img  
-          src="/Frame 9.png"
+          src={pic}
           alt="About Us"
           className="object-cover h-[300px] w-[500px]"  
         />

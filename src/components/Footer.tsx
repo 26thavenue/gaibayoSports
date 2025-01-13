@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 // import { Link } from "react-router-dom";
 // import { FiYoutube } from "react-icons/fi";
+import logo from "../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
         {/* Logo and Title */}
         <div className="flex flex-col gap-2 items-center mb-8">
           <img
-            src="/GAIBAYO_SPORT_LOGO__NEW__page-0001__1_-removebg-preview.png"
+            src={logo}
             alt="logo"  
             className="h-[200px] w-[200px] object-cover rounded-full bg-white p-2"
           />

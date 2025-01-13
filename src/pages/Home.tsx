@@ -12,11 +12,11 @@ function Home() {
 
   useEffect(() => {
     const animationTimeout = setTimeout(() => {
-      setAnimationCompleted(true); // Slide up after 3 seconds
+      setAnimationCompleted(true); 
     }, 3000);
 
     const contentTimeout = setTimeout(() => {
-      setShowMainContent(true); // Show content after animation finishes
+      setShowMainContent(true); 
     }, 4000);
 
     return () => {
@@ -38,7 +38,7 @@ function Home() {
           transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
         }}
       >
-        <h2 className=" sm:text-2xl lg:text-4xl flex space-x-2">
+        <h2 className="text-4xl flex space-x-2">
           {text.split(" ").map((word, index) => (
             <span
               key={index}

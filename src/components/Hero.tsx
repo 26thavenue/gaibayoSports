@@ -23,7 +23,7 @@ const Hero = () => {
    
 
   return (
-    <div className='w-full h-[60vh] bg-blue-100 lg:h-[100vh] lg:bg-black  ' >
+    <div className='w-full h-[60vh] bg-[#231F20] lg:h-[100vh] lg:bg-black  ' >
       <img
          src={currentBg}
 

@@ -17,8 +17,9 @@ const About = () => {
 
       <div className='absolute inset-0 flex flex-col items-center justify-between text-white'>
         <Navbar/>
-        <div className="flex flex-col h-full items-center justify-center text-center space-y-4">
+        <div className="flex flex-col items-center text-center space-y-4 my-0 h-full justify-normal lg:justify-center mt-40 lg:mt-0">
           <h1 className="text-3xl lg:text-6xl font-bold text-center mb-8 text-white">About Us</h1>
+          <p className="max-w-xl text-gray-200">We are passionate about empowering athletes and sports professionals to reach their full potential. With a dedication to excellence, we strive to deliver personalized solutions that foster growth, success, and lasting partnerships.</p>
         </div>
         
       </div>

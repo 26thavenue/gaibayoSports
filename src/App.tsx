@@ -4,8 +4,10 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import useLenis from "./lenis";
 
 const App = () => {
+  useLenis()
   return (
     <Router>
       <Routes>
