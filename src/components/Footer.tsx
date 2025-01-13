@@ -2,7 +2,7 @@ import { MdOutlineMail , MdOutlineLocalPhone  } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6"; 
 import { BsInstagram } from "react-icons/bs";
 // import { Link } from "react-router-dom";
-// import { FiYoutube } from "react-icons/fi";
+import { FiYoutube } from "react-icons/fi";
 import logo from "../assets/logo.png"
 
 const Footer = () => {
@@ -49,12 +49,12 @@ const Footer = () => {
             <a href="tel:+905357837831" className="hover:text-gray-700">
              <MdOutlineLocalPhone size={24}/>
             </a>
-            {/* <a
+            <a
               target="_blank"
               rel="noopener noreferrer" 
-              href="https://youtube.com/Manager_gabi " className="hover:text-gray-700">
+              href="https://youtube.com/@manager_gabi?si=AJBv3NHoCnwknkL- " className="hover:text-gray-700">
              <FiYoutube size={24}/>
-            </a> */}
+            </a>
           </div>
           
         </div>

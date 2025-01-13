@@ -9,10 +9,10 @@ import ContactUs from '../components/ContactUs';
 const Services = () => {
   const services = [
     {
-      title: "Financial Management",
+      title: "Contract Management",
       description:
-        "Gaibayo Sports recognizes that financial stability is critical to a successful and fulfilling career. With the limited duration of a sports career, we take swift action to develop a robust financial planning strategy tailored to each client’s unique circumstances and goals.Leveraging our extensive network and expertise, we help clients build a sustainable financial foundation that ensures security both during and after their career.",
-      image: FM, 
+        "We put our client’s interests at the heart of every contract negotiation. Acting as a trusted intermediary, we leverage our advanced negotiation expertise to secure contracts that reflect our client’s true worth and align with their professional and personal goals.Our commitment is to achieve the best possible outcomes, whether negotiating player contracts, transfer agreements, sponsorship deals, or licensing opportunities. Every detail is meticulously handled to ensure our clients are set up for success.",
+      image: CN, 
     },
     {
       title: "Career Management",
@@ -21,16 +21,16 @@ const Services = () => {
       image: CM , 
     },
     {
-      title: "Contract Negotiation",
-      description:
-        "We put our client’s interests at the heart of every contract negotiation. Acting as a trusted intermediary, we leverage our advanced negotiation expertise to secure contracts that reflect our client’s true worth and align with their professional and personal goals.Our commitment is to achieve the best possible outcomes, whether negotiating player contracts, transfer agreements, sponsorship deals, or licensing opportunities. Every detail is meticulously handled to ensure our clients are set up for success.",
-      image: CN, 
-    },
-    {
       title: "PR Services",
       description:
         "At GaibayoSPORTS, we understand the significance of maintaining a positive public image throughout our client’s career. Our dedicated PR team works closely with clients to craft a professional and authentic image that resonates with fans, sponsors, and the broader sports community.",
       image: PR, 
+    },
+     {
+      title: "Financial Management",
+      description:
+        "Gaibayo Sports recognizes that financial stability is critical to a successful and fulfilling career. With the limited duration of a sports career, we take swift action to develop a robust financial planning strategy tailored to each client’s unique circumstances and goals.Leveraging our extensive network and expertise, we help clients build a sustainable financial foundation that ensures security both during and after their career.",
+      image: FM, 
     },
   ];
 

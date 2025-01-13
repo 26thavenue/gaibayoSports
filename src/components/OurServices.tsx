@@ -17,13 +17,7 @@ const OurServices = () => {
            <h1 className='text-2xl lg:text-5xl text-white font-bold '>Services</h1>
         </div>
        
-        <div className='grid  grid-cols-1 lg:grid-cols-2 gap-4'>
-            <Card
-              cardType='vertical'
-              imgUrl={FM}
-              cardHeader='Financial Management'
-              cardContents='Gaibayo Sports recognizes that financial stability is critical to a successful and fulfilling career. With the limited duration of a sports career, we take swift action to develop a robust financial planning strategy tailored to each client’s unique circumstances and goals.'
-              />
+        <div className='grid  grid-cols-1 lg:grid-cols-2 gap-4'>      
           <Card
               cardType='vertical'
               imgUrl={CN}
@@ -41,6 +35,12 @@ const OurServices = () => {
               imgUrl={PR}
               cardHeader='PR Services'
               cardContents='Our dedicated PR team works closely with clients to craft a professional and authentic image that resonates with fans, sponsors, and the broader sports community.'
+              />
+           <Card
+              cardType='vertical'
+              imgUrl={FM}
+              cardHeader='Financial Management'
+              cardContents='Gaibayo Sports recognizes that financial stability is critical to a successful and fulfilling career. With the limited duration of a sports career, we take swift action to develop a robust financial planning strategy tailored to each client’s unique circumstances and goals.'
               />
         </div>
        
