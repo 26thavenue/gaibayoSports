@@ -5,6 +5,7 @@ import PR from "../assets/PR_Services.png"
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ContactUs from '../components/ContactUs';
+import bg from "../assets/Services.png"
 
 const Services = () => {
   const services = [
@@ -38,7 +39,7 @@ const Services = () => {
     <div className='w-full  bg-[#231F20]  '>
       <div className='w-full h-[60vh] lg:h-[100vh]'>
          <img
-         src={FM}
+         src={bg}
          className="w-full h-[60vh] lg:h-full object-cover absolute "
          alt="Sports"
          />

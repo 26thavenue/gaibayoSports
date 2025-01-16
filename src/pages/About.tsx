@@ -1,9 +1,10 @@
-import bg from "../assets/About_Us.png"
+import bg from "../assets/About4.png"
 import Footer from "../components/Footer"
 import FounderImg from "../assets/Founder_001.jpg"
 import Testimonials from "../components/Testimonials"
 import ContactUs from "../components/ContactUs"
 import Navbar from "../components/Navbar"
+
 
 const About = () => {
   return (

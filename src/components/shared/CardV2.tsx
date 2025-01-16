@@ -5,6 +5,7 @@ interface ICardV2{
     header:string
     actionWord:string
     description:string
+    onClick?: () => void
 }
 
 const CardV2 = ({icon, header,actionWord,description}:ICardV2) => {
