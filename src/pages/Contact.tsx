@@ -9,14 +9,14 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <div className="bg-[#231F20] text-black min-h-screen flex flex-col items-center w-full ">
+    <div className="bg-[#FBF7F4] text-black min-h-screen flex flex-col items-center w-full ">
       <div className='w-full h-[60vh] lg:h-[100vh] '>
          <img
          src={bg}
          className="w-full h-[60vh] lg:h-full object-cover absolute "
          alt="Sports"
          />
-        <div className='absolute  inset-0 flex flex-col items-center justify-between text-white'>
+        <div className='absolute  inset-0 flex flex-col items-center justify-between '>
           <Navbar/>
            <div className="flex flex-col items-center text-center space-y-4 my-0 h-full justify-normal lg:justify-center mt-40 lg:mt-0">
           <h1 className="text-3xl lg:text-6xl font-bold text-center mb-8 text-white">Contact Us</h1>
@@ -25,13 +25,13 @@ const Contact = () => {
         </div>
       </div>
        
-      <h1 className="text-2xl text-white lg:text-4xl font-bold mt-12 lg:mt-16  mb-12">Contact Our Team</h1>
-      <p className="text-center text-white max-w-lg text-[14px] px-12  mb-8">
+      <h1 className="text-2xl  lg:text-4xl font-bold mt-12 lg:mt-16  mb-12">Contact Our Team</h1>
+      <p className="text-center  max-w-lg text-[14px] px-12  mb-8">
         Want to get in touch with us? Feel free to send an email, give us a call, 
         or reach out to us on our social media platforms below.
       </p>
 
-      <div className="grid grid-cols-1 justify-items-center justify-center lg:grid-cols-3 gap-6 w-full  mx-auto lg:max-w-5xl my-12">
+      <div className="grid grid-cols-1 justify-items-center justify-center lg:grid-cols-3 gap-6 w-full  mx-auto lg:max-w-4xl my-12">
         <CardV2
           icon={<MdOutlineMail  size={24} className="text-black" />}
           header="Send Us an Email"

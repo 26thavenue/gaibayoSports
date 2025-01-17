@@ -28,7 +28,7 @@ function Home() {
   const text = "Gaibayo Sports";
 
   return (
-    <div className=" bg-[#231F20]">
+    <div className=" bg-[#FBF7F4]">
       {/* Initial Animation Div */}
       <div
         className={`fixed bg-[#231F20]  text-white top-0 flex items-center justify-center left-0 w-full h-full transition-transform duration-1000 ${
@@ -61,8 +61,9 @@ function Home() {
         }`}
       >
         <Hero />
-        <OurServices />
         <AboutUs />
+        <OurServices />
+        
         <ContactUs />
         <Footer/>
       </div>

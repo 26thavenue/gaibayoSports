@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <div className='w-full  bg-[#231F20]  '>
+    <div className='w-full  bg-[#FBF7F4]  '>
       <div className='w-full h-[60vh] lg:h-[100vh]'>
          <img
          src={bg}
@@ -54,7 +54,7 @@ const Services = () => {
       
       </div>
       
-      <div className=" gap-16 flex flex-col mx-auto w-full lg:max-w-4xl my-40  ">
+      <div className=" gap-16 flex flex-col mx-auto w-full lg:max-w-4xl my-10 lg:my-40  ">
         {services.map((service, index) => (
           <div
             key={index}
@@ -66,8 +66,8 @@ const Services = () => {
               className=" h-[200px] lg:h-[300px] w-[300px] lg:w-[400px] object-cover rounded-md "
             />
             <div className=" py-6 px-0 lg:p-6 w-[300px] lg:w-1/2">
-              <h2 className="text-2xl text-white font-semibold mb-2">{service.title}</h2>
-              <p className=" text-white text-[16px]">{service.description}</p>
+              <h2 className="text-2xl text-black font-semibold mb-2">{service.title}</h2>
+              <p className=" text-black text-[16px]">{service.description}</p>
             </div>
           </div>
         ))}

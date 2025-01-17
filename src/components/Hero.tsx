@@ -23,14 +23,14 @@ const Hero = () => {
    
 
   return (
-    <div className='w-full h-[60vh] bg-[#231F20] lg:h-[100vh] lg:bg-black  ' >
+    <div className='w-full h-[60vh] bg-[#FBF7F4] lg:h-[100vh] ' >
       <img
          src={currentBg}
 
-         className="w-full lg:h-full h-[60vh] object-cover absolute "
+         className="w-full lg:h-full h-[60vh] object-cover absolute px-6 py-3 rounded-md"
          alt="Sports"
          />
-       <div className="absolute  inset-0 flex flex-col items-center justify-between text-white">
+       <div className="absolute  inset-0 flex flex-col items-center justify-between text-white py-6 px-6">
         <Navbar />
 
         {/* Text Content */}
