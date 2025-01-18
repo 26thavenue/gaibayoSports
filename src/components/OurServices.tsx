@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import Card from "./shared/Card";
 import FM from "../assets/Financial_Management_1.png";
 import CN from "../assets/Contract_Negotiations.png";
@@ -6,13 +5,9 @@ import CM from "../assets/career_mgmt.png";
 import PR from "../assets/PR_Services.png";
 
 const OurServices = () => {
-  const navigate = useNavigate();
 
    const handleCardClick = () => {
-    // Add a slight delay before redirecting
-    setTimeout(() => {
-      navigate("/services");
-    }, 500); // 500ms delay for smoother transition
+    window.location.href = "/services"; 
   };
   return (
     <div className="px-6 py-16 mt-4 flex flex-col gap-5 bg-[#FBF7F4]">
