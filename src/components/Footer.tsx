@@ -19,7 +19,7 @@ const Footer = () => {
                 alt="logo"  
                 className="h-[200px] w-[200px] object-cover rounded-full bg-white p-2"
                 />
-              <p className="">We are sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes.</p>
+              <p className="">We are a sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes.</p>
             </div>
             <img
                   src={bg}
