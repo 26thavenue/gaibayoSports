@@ -21,7 +21,7 @@ const Contact = () => {
           <Navbar/>
            <div className="flex flex-col items-center text-center space-y-4 my-0 h-full justify-normal lg:justify-center mt-40 lg:mt-0">
           <h1 className="text-3xl lg:text-6xl font-bold text-center mb-8 text-white">Contact Us</h1>
-          <p className="max-w-xl text-gray-200">We’re here to assist you every step of the way. Whether you have a question, need guidance, or wish to collaborate, don’t hesitate to reach out. Your journey to success starts with a conversation—let’s connect!</p>
+          <p className="max-w-xl text-gray-200 p-2 lg:p-1 text-[14px] lg:text-base">We’re here to assist you every step of the way. Whether you have a question, need guidance, or wish to collaborate, don’t hesitate to reach out. Your journey to success starts with a conversation—let’s connect!</p>
         </div>
         </div>
       </div>

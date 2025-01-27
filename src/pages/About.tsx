@@ -21,7 +21,7 @@ const About = () => {
         <Navbar/>
         <div className="flex flex-col items-center text-center space-y-4 my-0 h-full justify-normal lg:justify-center mt-40 lg:mt-0">
           <h1 className="text-3xl lg:text-6xl font-bold text-center mb-8 text-white">About Us</h1>
-          <p className="max-w-xl text-gray-200">We are passionate about empowering athletes and sports professionals to reach their full potential. With a dedication to excellence, we strive to deliver personalized solutions that foster growth, success, and lasting partnerships.</p>
+          <p className="max-w-xl text-gray-200 p-2 lg:p-1 text-[14px] lg:text-base ">We are passionate about empowering athletes and sports professionals to reach their full potential. With a dedication to excellence, we strive to deliver personalized solutions that foster growth, success, and lasting partnerships.</p>
         </div>
         
       </div>
@@ -31,10 +31,10 @@ const About = () => {
         <p className='text-[14px] lg:text-[16px] my-3 text-black'>
           Gaibayo Sports Management and Marketing is a premier sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes. We provide comprehensive PR services, global placement opportunities, and create powerful partnerships that elevate the careers of athletes on the international stage.Led by the FIfA Licensed Players Agent - Gabriel A. Akande, we predominantly operate in the Turkey and Nigeria with deal transactions across various continents.
         </p>
-        <p className='text-[16px] my-3 text-black'>
+        <p className='text-[14px] lg:text-[16px] my-3 text-black'>
           Gaibayo Sports Agency focuses on the discovery and development of sporting talents. Our core mission is to scout, promote, and provide comprehensive career management that spans representation, marketing, mindset development, and structured career progression at every stage of an athlete’s journey.
         </p>
-        <p className='text-[16px] my-3 text-black'>
+        <p className='text-[14px] lg:text-[16px] my-3 text-black'>
           At Gaibayo Sports, we foster a supportive and dynamic environment where every athlete has the opportunity to excel. This philosophy has been the cornerstone of our rapid success. We are dedicated to representing athletes across a wide range of sports, offering them professional, detail-oriented, and personalized services.
         </p>
 
@@ -55,7 +55,7 @@ const About = () => {
               <p className='text-[14px] lg:text-[16px] my-3 text-black'>
                 Gabriel A. Akande is a seasoned FIFA Licensed Players Agent with extensive experience in scouting, managing, and representing top-tier talent in the world of sports. With a primary focus on operations in Turkey and Nigeria, Gabriel has successfully facilitated deal transactions across multiple continents, showcasing his expertise in navigating the global sports industry.
               </p>
-              <p className='text-[16px] my-3 text-black'>
+              <p className='text-[14px] lg:text-[16px]] my-3 text-black'>
                 Driven by a passion for empowering athletes, Gabriel combines his in-depth industry knowledge with a meticulous approach to career planning, ensuring every talent under his representation receives unparalleled guidance and opportunities. His commitment to excellence and strategic vision has positioned him as a trusted name in the international sports arena.
               </p>
             </div>

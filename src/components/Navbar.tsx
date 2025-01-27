@@ -77,33 +77,7 @@ const Navbar = () => {
               to="/about"
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
             >
-              About
-            </Link>
-            <span
-              className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2.2"
-                stroke="currentColor"
-                className="w-12"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </span>
-          </div>
-           <div className="group flex gap-3 items-center text-4xl lg:text-6xl relative">
-            <Link
-              to="/contact"
-              className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
-            >
-              Contact Us
+              About Us
             </Link>
             <span
               className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
@@ -130,6 +104,32 @@ const Navbar = () => {
               className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
             >
               Our Services
+            </Link>
+            <span
+              className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.2"
+                stroke="currentColor"
+                className="w-12"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </div>
+           <div className="group flex gap-3 items-center text-4xl lg:text-6xl relative">
+            <Link
+              to="/contact"
+              className="relative after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full"
+            >
+              Contact Us
             </Link>
             <span
               className="inline-block translate-x-[-20px] opacity-0 transition-transform duration-500 group-hover:translate-x-0 group-hover:opacity-100"
