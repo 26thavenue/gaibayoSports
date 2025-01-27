@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FiYoutube } from "react-icons/fi";
 import logo from "../assets/logo.png"
-import bg from "../assets/About4.png"
+import bg from "../assets/About_4.jpg"
 
 const Footer = () => {
   return (
@@ -17,6 +17,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="logo"  
+                loading="lazy"
                 className="h-[200px] w-[200px] object-cover rounded-full bg-white p-2"
                 />
               <p className="">We are a sports management, media, and entertainment company specializing in the representation of both professional and amateur athletes.</p>
@@ -24,7 +25,8 @@ const Footer = () => {
             <img
                   src={bg}
                   alt="Football"
-                  className="w-[200px] h-[200px] object-cover hidden lg:block"
+                  loading="lazy"
+                  className="w-[200px] h-[200px] object-cover rounded-md hidden lg:block"
                   />
           </div>
          

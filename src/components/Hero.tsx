@@ -30,6 +30,7 @@ const Hero = () => {
           src={currentBg}
           className="w-full lg:h-full h-[60vh] p-2 object-cover"
           alt="Sports"
+          loading="lazy"
         />
       </div>
        <div className="absolute  inset-0 flex flex-col items-center justify-between text-white  p-3 lg:p-6">

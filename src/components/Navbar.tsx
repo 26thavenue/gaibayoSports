@@ -16,6 +16,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
+          loading="lazy"
           className="h-[70px] lg:h-[100px]  w-[70px] lg:w-[100px] object-cover"
         />
       </Link>

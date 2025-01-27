@@ -63,6 +63,7 @@ const Services = () => {
             <img
               src={service.image}
               alt={service.title}
+              loading="lazy"
               className=" h-[200px] lg:h-[300px] w-[300px] lg:w-[400px] object-cover rounded-md "
             />
             <div className=" py-6 px-0 lg:p-6 w-[300px] lg:w-1/2">

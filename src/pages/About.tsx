@@ -1,4 +1,4 @@
-import bg from "../assets/About4.png"
+import bg from "../assets/About_4.jpg"
 import Footer from "../components/Footer"
 import FounderImg from "../assets/Founder_001.jpg"
 import Testimonials from "../components/Testimonials"
@@ -14,6 +14,7 @@ const About = () => {
          src={bg}
          className="w-full h-[60vh] lg:h-full object-cover absolute "
          alt="Sports"
+         loading="lazy"
          />
 
       <div className='absolute inset-0 flex flex-col items-center justify-between text-black'>

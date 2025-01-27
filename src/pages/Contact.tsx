@@ -15,6 +15,7 @@ const Contact = () => {
          src={bg}
          className="w-full h-[60vh] lg:h-full object-cover absolute "
          alt="Sports"
+         loading="lazy"
          />
         <div className='absolute  inset-0 flex flex-col items-center justify-between '>
           <Navbar/>

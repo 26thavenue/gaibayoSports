@@ -21,7 +21,8 @@ const AboutUs = () => {
          <img  
           src={pic}
           alt="About Us"
-          className="object-cover h-[400px] w-[600px] rounded-md"  
+          className="object-cover h-[400px] w-[600px] rounded-md" 
+          loading="lazy" 
         />
     </div>
   )

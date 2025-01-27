@@ -10,6 +10,7 @@ const ContactUs = () => {
         src={bg}
         className="w-full h-[40vh] lg:h-full object-cover rounded-md"
         alt="Sports"
+        loading="lazy"
       />
 
       
