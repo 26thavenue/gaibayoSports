@@ -4,7 +4,7 @@ import bg from "../assets/ContactUs.png";
 
 const ContactUs = () => {
   return (
-    <div className="relative flex flex-col text-black rounded-md h-[40vh] lg:h-[80vh]  mx-auto justify-center px-3 lg:px-6 mb-6 lg:mb-0">
+    <div className="w-full relative flex flex-col text-black rounded-md h-[40vh] lg:h-[80vh]  mx-auto justify-center px-3 lg:px-6 mb-6 lg:mb-0">
       {/* Background Image */}
       <img
         src={bg}

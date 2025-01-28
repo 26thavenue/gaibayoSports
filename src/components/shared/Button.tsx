@@ -2,12 +2,13 @@ import { ButtonSize, ButtonType } from "../../utils";
 
 interface IButtonProps {
   size: ButtonSize;
-  buttonName: string;
+  buttonName?: string;
   buttonType: ButtonType;
   onClick?: () => void;
+  className?: string
 }
 
-const Button = ({ size, buttonName, buttonType, onClick }: IButtonProps) => {
+const Button = ({ size, buttonName, buttonType, onClick,className }: IButtonProps) => {
   const baseClasses = "rounded px-4 py-2 font-semibold";
   const sizeClasses = {
     small: "text-sm",
@@ -24,7 +25,7 @@ const Button = ({ size, buttonName, buttonType, onClick }: IButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`${baseClasses} ${sizeClasses} ${typeClasses}`}
+      className={`${baseClasses} ${sizeClasses} ${typeClasses} ${className}`}
     >
       {buttonName}
     </button>
