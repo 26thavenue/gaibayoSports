@@ -50,7 +50,7 @@ const Contact = () => {
           icon={<MdOutlineLocalPhone  size={24} className="text-black" />}
           header="Call Us"
           actionWord="Give Us a Call"
-          description="+2349131227421"
+          description="+2349131227421 / +905357837831"
         />
         <CardV2
           icon={<FaXTwitter size={24} className="text-black" />}
