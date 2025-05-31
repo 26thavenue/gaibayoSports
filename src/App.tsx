@@ -9,6 +9,7 @@ import Events from "./pages/Events"
 import Event from "./pages/Event"
 import useLenis from "./lenis";
 import ScrollToTop from "./scroll";
+import SportingLisbonEvent from "./pages/SportingLisbonEvent"
 
 const App = () => {
   useLenis();
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/contact" element={<MotionWrapper><Contact /></MotionWrapper>} />
         <Route path="/events" element={<MotionWrapper><Events /></MotionWrapper>} />
         <Route path="/events/pre_scouting_program" element={<MotionWrapper><Event /></MotionWrapper>} />
+        <Route path="/events/sportinglisbon" element={<MotionWrapper><SportingLisbonEvent /></MotionWrapper>} />
         <Route path="*" element={<MotionWrapper><NotFound /></MotionWrapper>} />
       </Routes>
     </Router>

@@ -32,7 +32,7 @@ const Event = () => {
       Back
     </button>
 
-      <div className="p-12">
+      <div className="px-12 ">
         <div className="flex my-5 lg:my-10 flex-col mx-auto justify-center gap-6 items-center ">
         <h2 className=" text-3xl lg:text-5xl font-bold"> Pre Scouting Program</h2>
         <div className="flex gap-3 flex-col items-center ">

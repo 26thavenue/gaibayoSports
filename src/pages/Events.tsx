@@ -30,7 +30,7 @@ const Contact = () => {
 
       <section className="my-8 p-12">
         <div>
-          <h2 className="my-8 text-4xl font-bold">Upcoming Event</h2>
+          <h2 className="my-8 text-4xl font-bold">All Events</h2>
           <div>
             <img 
              src={n2}
@@ -52,12 +52,24 @@ const Contact = () => {
               <p className="leading-loose">
                 From April 7th to 11th, Onikan Stadium will host an exciting opportunity for football enthusiasts and aspiring athletes. Scouts from Sporting CP (Portugal) and several top European clubs will be present, scouting for fresh talent. This is a unique opportunity for players to showcase their skills and potentially make their mark in the international football scene. Don’t miss out on this chance to be seen by some of Europe’s finest football scouts! Mark your calendars and get ready for an unforgettable week of talent, competition, and opportunity.
               </p>
+
+
+              <Link to= "/events/sportinglisbon" >
+                <Button
+                 buttonName="View Event"
+                 size={"medium"}
+                 buttonType="primary"
+                 className="my-3"
+                 
+                />
+                
+              </Link>
             
           
           </div>
 
-          <h2 className="mt-16 mb-8 text-4xl font-bold">Other Events</h2>
-          <div>
+          
+          <div className="my-10">
             <img 
              src={n1}
              alt="Past Event Banner"
